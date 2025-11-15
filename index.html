@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunting Trip Log</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Hunting Trip Log</h1>
+
+    <div class="card">
+      <form id="tripForm">
+        <label>Date of Trip</label>
+        <input type="date" name="tripDate" required />
+
+        <label>Notes</label>
+        <textarea name="notes"></textarea>
+
+        <button type="submit">Save Hunting Log</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Saved Logs</h2>
+      <div id="logContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+     
+  </body>
+</html>
